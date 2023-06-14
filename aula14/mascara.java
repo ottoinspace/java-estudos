@@ -43,11 +43,32 @@ public class mascara {
 
         return retorno;
     }
+
+    static String lerTextoTamanhoFixo(int tamanho){
+        String retorno = "";
+        BufferedReader leitor = new BufferedReader(new InputStreamReader(System.in));
+
+        do{
+            try{
+                System.out.print("digite um texto de tamanho" + tamanho + ": ");
+                retorno = leitor.readLine();
+            }catch(Exception erro){
+                System.out.println(erro);
+            }
+        }while (retorno.length() != tamanho);
+
+        return retorno;
+    }
+
     public static void main(String[] args) {
         int numero = lerNumeroInteiro();
         double fracao = lerNumeroFracionario();
+        String texto5 = lerTextoTamanhoFixo(5);
+        String texto8 = lerTextoTamanhoFixo(8);
 
         System.out.print(numero);
         System.out.println(fracao);
+        System.out.println(texto5);
+        System.out.println(texto8);
     }
 }
