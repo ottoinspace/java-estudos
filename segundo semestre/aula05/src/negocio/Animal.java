@@ -38,7 +38,7 @@ public abstract class Animal {
 	}
 	
 	// metodos da classe
-	public double calcularImc(double peso, double altura) {
+	public double calcularImc() {
 		return (getPeso()/ Math.pow(getAltura(), 2));
 	}
 }

@@ -66,9 +66,7 @@ public class PrincipalZoologico {
 		// saida de dados
 		System.out.println("Peso: " + objAnimal.getPeso());
 		System.out.println("Altura: " + objAnimal.getAltura());
-		double peso = objAnimal.getPeso();
-		double altura = objAnimal.getAltura();
-		System.out.println("IMC: " + objAnimal.calcularImc(peso, altura));
+		System.out.println("IMC: " + objAnimal.calcularImc());
 		System.out.println("Nome: " + objAnimal.getNome());
 		if(opcao.equalsIgnoreCase("C") || opcao.equalsIgnoreCase("L")) {
 			System.out.println("Litros de leite: " + ((Mamifero) objAnimal).getLitrosLeite());
